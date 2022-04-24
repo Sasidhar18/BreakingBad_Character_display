@@ -11,7 +11,7 @@ function App() {
   const [query, setQuery] = useState("")
   const [item, setItem] = useState([])
   const [loading, setLoading] = useState(true)
-  const user = useSelector(state => state.user)
+ 
 
   useEffect(() => {
     const FetchItems = async () => {
