@@ -5,7 +5,7 @@ import CharacterList from './Components/CharacterList';
 import NavBar from './Components/NavBar';
 import SearchBar from './Components/SearchBar';
 import Spinner from './Components/Spinner';
-import { useSelector, useDispatch } from 'react-redux';
+
 
 function App() {
   const [query, setQuery] = useState("")
