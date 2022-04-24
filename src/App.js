@@ -12,7 +12,6 @@ function App() {
   const [item, setItem] = useState([])
   const [loading, setLoading] = useState(true)
   const user = useSelector(state => state.user)
-  const dispatch = useDispatch();
 
   useEffect(() => {
     const FetchItems = async () => {
@@ -23,8 +22,6 @@ function App() {
     FetchItems()
   }, [query])
 
-  // dispatch({ type: "GET_USER" })
-  console.log(user)
   return (
     <div className="App">
       <NavBar />
